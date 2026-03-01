@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+
+# UV
+.python-version
+
+# Logs
+*.log
+AI_Employee_Vault/Logs/*.log
+AI_Employee_Vault/Logs/*.json
+
+# Obsidian
+.obsidian/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Sensitive files
+.env
+.env.local
+credentials.json
+secrets/
+*.key
+*.pem
+
+# Temporary files
+*.tmp
+*.temp
+AI_Employee_Vault/Inbox/*
+AI_Employee_Vault/Needs_Action/*
+AI_Employee_Vault/Done/*
+AI_Employee_Vault/Pending_Approval/*
+AI_Employee_Vault/Approved/*
+AI_Employee_Vault/Rejected/*
+
+# Keep folder structure but ignore contents
+!AI_Employee_Vault/Inbox/.gitkeep
+!AI_Employee_Vault/Needs_Action/.gitkeep
+!AI_Employee_Vault/Done/.gitkeep
+!AI_Employee_Vault/Pending_Approval/.gitkeep
+!AI_Employee_Vault/Approved/.gitkeep
+!AI_Employee_Vault/Rejected/.gitkeep
