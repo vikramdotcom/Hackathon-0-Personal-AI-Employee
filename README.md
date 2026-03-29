@@ -8,7 +8,7 @@ A local-first autonomous AI Employee built with Claude Code and Obsidian that ma
 
 **Current Tier**: Silver (Ready) 🚀
 **Bronze Tier**: Complete ✅
-**Silver Tier**: Skills Created ✅ (MCP Setup Required)
+**Silver Tier**: Skills Created ✅ (MCP Setup Remaining)
 **Architecture**: Local-first, Human-in-the-loop, Agent-driven
 
 ## ✨ Bronze Tier Features (Complete)
