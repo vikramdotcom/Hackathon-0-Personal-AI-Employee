@@ -1,0 +1,20 @@
+{
+  "check_interval": 300,
+  "priority_keywords": {
+    "high": ["urgent", "asap", "invoice", "payment", "deadline", "client", "emergency"],
+    "medium": ["inquiry", "question", "request", "follow-up", "meeting"],
+    "low": ["newsletter", "notification", "update", "digest"]
+  },
+  "auto_label": "AI_Employee_Processed",
+  "skip_senders": [
+    "noreply@",
+    "no-reply@",
+    "notifications@",
+    "donotreply@"
+  ],
+  "max_emails_per_check": 20,
+  "important_senders": [],
+  "auto_mark_read": false,
+  "create_drafts": true,
+  "require_approval": true
+}

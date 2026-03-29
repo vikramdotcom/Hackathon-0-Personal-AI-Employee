@@ -43,6 +43,17 @@ secrets/
 *.key
 *.pem
 
+# Authentication tokens and sessions
+token.pickle
+*.pickle
+linkedin_session.json
+*_session.json
+AI_Employee_Vault/watchers/token.pickle
+AI_Employee_Vault/watchers/linkedin_session.json
+
+# Personal post content
+my_linkedin_post.txt
+
 # Temporary files
 *.tmp
 *.temp

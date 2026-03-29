@@ -1,0 +1,21 @@
+{
+  "check_messages_interval": 3600,
+  "auto_accept_connections": false,
+  "post_approval_required": true,
+  "max_connections_per_day": 10,
+  "max_messages_per_day": 20,
+  "max_posts_per_day": 5,
+  "engagement_tracking": true,
+  "personalize_connection_requests": true,
+  "default_post_time": "09:00",
+  "default_visibility": "public",
+  "optimal_posting_days": ["Tuesday", "Wednesday", "Thursday"],
+  "optimal_posting_times": ["09:00", "12:00", "17:00"],
+  "hashtag_limit": 5,
+  "connection_message_max_length": 300,
+  "require_approval": true,
+  "track_analytics": true,
+  "respond_to_comments": true,
+  "auto_like": false,
+  "rate_limit_delay": 30
+}

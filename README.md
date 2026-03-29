@@ -1,4 +1,4 @@
-# Personal AI Employee - Bronze Tier ✅
+# Personal AI Employee - Bronze & Silver Tier ✅
 
 **GIAIC Q4 Hackathon 0** - Building Autonomous FTEs in 2026
 
@@ -6,8 +6,9 @@ A local-first autonomous AI Employee built with Claude Code and Obsidian that ma
 
 ## 🎯 Project Status
 
-**Tier**: Bronze (Complete) ✅
-**Estimated Time**: 8-12 hours
+**Current Tier**: Silver (Ready) 🚀
+**Bronze Tier**: Complete ✅
+**Silver Tier**: Skills Created ✅ (MCP Setup Required)
 **Architecture**: Local-first, Human-in-the-loop, Agent-driven
 
 ## ✨ Bronze Tier Features (Complete)
@@ -19,6 +20,17 @@ A local-first autonomous AI Employee built with Claude Code and Obsidian that ma
 ✅ All AI functionality implemented as Agent Skills
 ✅ Human-in-the-loop approval workflow
 ✅ Comprehensive logging and audit trail
+
+## 🌟 Silver Tier Features (Ready)
+
+✅ Gmail monitoring and email management
+✅ Email sending with approval workflow
+✅ Calendar integration and scheduling
+✅ WhatsApp message monitoring
+✅ LinkedIn automation and networking
+✅ Natural language date/time parsing
+✅ Draft response generation
+✅ Engagement tracking and analytics
 
 ## 🚀 Quick Start
 
@@ -65,20 +77,43 @@ claude /ai-employee process
 
 ```
 Hackathon-0-Personal-AI-Employee/
-├── AI_Employee_Vault/          # Obsidian vault
-│   ├── Dashboard.md            # System status
-│   ├── Company_Handbook.md     # Rules & guidelines
-│   ├── Inbox/                  # Drop folder (monitored)
-│   ├── Needs_Action/          # Tasks to process
-│   ├── Done/                  # Completed tasks
-│   ├── Plans/                 # Task plans
-│   ├── Logs/                  # Activity logs
-│   ├── Pending_Approval/      # Awaiting approval
-│   └── watchers/              # Python scripts
-├── .claude/skills/ai-employee/ # Claude Code skill
-├── start_watcher.sh/bat       # Start scripts
-├── test_system.sh/bat         # Test scripts
-└── DEMO.md                    # Complete walkthrough
+├── AI_Employee_Vault/              # Obsidian vault
+│   ├── Dashboard.md                # System status
+│   ├── Company_Handbook.md         # Rules & guidelines
+│   ├── Config/                     # NEW: Configuration files
+│   │   ├── gmail_rules.json
+│   │   ├── email_settings.json
+│   │   ├── calendar_settings.json
+│   │   ├── whatsapp_rules.json
+│   │   └── linkedin_settings.json
+│   ├── Reports/                    # NEW: Analytics reports
+│   ├── Inbox/                      # Drop folder (monitored)
+│   ├── Needs_Action/              # Tasks to process
+│   ├── Done/                      # Completed tasks
+│   ├── Plans/                     # Task plans
+│   ├── Logs/                      # Activity logs
+│   ├── Pending_Approval/          # Awaiting approval
+│   ├── Approved/                  # Approved actions
+│   ├── Rejected/                  # Rejected actions
+│   └── watchers/                  # Python scripts
+│       ├── filesystem_watcher.py
+│       ├── gmail_watcher.py       # NEW
+│       ├── whatsapp_watcher.py    # NEW
+│       └── base_watcher.py
+├── .claude/skills/                # Claude Code skills
+│   ├── ai-employee/               # Bronze Tier
+│   ├── gmail-monitor/             # NEW: Silver Tier
+│   ├── send-email/                # NEW: Silver Tier
+│   ├── schedule-task/             # NEW: Silver Tier
+│   ├── whatsapp-monitor/          # NEW: Silver Tier
+│   └── linkedin-automation/       # NEW: Silver Tier
+├── start_watcher.sh/bat           # Start scripts
+├── test_system.sh/bat             # Test scripts
+├── verify_silver_tier.sh/bat      # NEW: Verification scripts
+├── DEMO.md                        # Bronze Tier demo
+├── SILVER_TIER_README.md          # NEW: Silver Tier guide
+├── MCP_SETUP_GUIDE.md             # NEW: MCP setup guide
+└── README.md                      # This file
 ```
 
 ## 🎮 Usage
@@ -123,17 +158,69 @@ bash test_system.sh
 
 ## 📚 Documentation
 
+### Bronze Tier
 - [DEMO.md](./DEMO.md) - Complete step-by-step demo
 - [AI_Employee_Vault/README.md](./AI_Employee_Vault/README.md) - Vault docs
+
+### Silver Tier
+- [SILVER_TIER_README.md](./SILVER_TIER_README.md) - Complete Silver Tier guide
+- [MCP_SETUP_GUIDE.md](./MCP_SETUP_GUIDE.md) - MCP server setup
+- [.claude/skills/gmail-monitor/SKILL.md](./.claude/skills/gmail-monitor/SKILL.md) - Gmail skill
+- [.claude/skills/send-email/SKILL.md](./.claude/skills/send-email/SKILL.md) - Email skill
+- [.claude/skills/schedule-task/SKILL.md](./.claude/skills/schedule-task/SKILL.md) - Calendar skill
+- [.claude/skills/whatsapp-monitor/SKILL.md](./.claude/skills/whatsapp-monitor/SKILL.md) - WhatsApp skill
+- [.claude/skills/linkedin-automation/SKILL.md](./.claude/skills/linkedin-automation/SKILL.md) - LinkedIn skill
+
+### General
 - [Hackathon Guide](./Personal%20AI%20Employee%20Hackathon%200_%20Building%20Autonomous%20FTEs%20in%202026-%20MARKDOWN.md)
 
-## 🚧 Next Steps (Silver Tier)
+## 🚀 Silver Tier Quick Start
 
-- [ ] Gmail watcher for email monitoring
-- [ ] WhatsApp watcher for messages
-- [ ] LinkedIn automation
-- [ ] MCP server for email sending
-- [ ] Automated scheduling
+Silver Tier skills are ready! To activate:
+
+1. **Verify Installation**:
+   ```bash
+   # Windows
+   verify_silver_tier.bat
+
+   # Linux/Mac
+   bash verify_silver_tier.sh
+   ```
+
+2. **Setup MCP Servers** (Required):
+   - Follow [MCP_SETUP_GUIDE.md](./MCP_SETUP_GUIDE.md)
+   - Configure Gmail and Google Calendar APIs
+   - Authenticate with Google OAuth2
+
+3. **Test Silver Tier Skills**:
+   ```bash
+   # Gmail monitoring
+   claude /gmail-monitor check
+
+   # Email sending
+   claude /send-email status
+
+   # Calendar scheduling
+   claude /schedule-task list
+
+   # WhatsApp monitoring
+   claude /whatsapp-monitor check
+
+   # LinkedIn automation
+   claude /linkedin-automation status
+   ```
+
+4. **Read Documentation**:
+   - [SILVER_TIER_README.md](./SILVER_TIER_README.md) - Complete guide
+   - [MCP_SETUP_GUIDE.md](./MCP_SETUP_GUIDE.md) - Setup instructions
+
+## 🚧 Next Steps (Gold Tier)
+
+- [ ] Odoo ERP integration
+- [ ] Social media automation (Twitter, Facebook)
+- [ ] CEO briefing generation
+- [ ] Advanced analytics and reporting
+- [ ] Multi-agent coordination
 
 ## 🤝 Hackathon Information
 

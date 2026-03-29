@@ -1,0 +1,15 @@
+{
+  "default_signature": "Best regards,\n[Your Name]\n[Your Title]\n[Your Company]",
+  "reply_prefix": "Re: ",
+  "max_recipients": 10,
+  "require_approval": true,
+  "log_all_emails": true,
+  "blocked_domains": [],
+  "cc_self": false,
+  "default_from": "",
+  "templates": {
+    "acknowledgment": "Thank you for your email. I have received it and will respond shortly.",
+    "out_of_office": "Thank you for your message. I am currently out of the office and will respond when I return.",
+    "meeting_confirmation": "Thank you for scheduling a meeting. I have added it to my calendar and look forward to speaking with you."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "check_interval": 300,
+  "priority_keywords": {
+    "high": ["urgent", "asap", "help", "emergency", "problem", "issue"],
+    "medium": ["question", "inquiry", "request", "when", "how"],
+    "low": ["thanks", "ok", "received", "noted", "got it"]
+  },
+  "auto_mark_read": false,
+  "skip_groups": false,
+  "important_contacts": [],
+  "max_messages_per_check": 50,
+  "download_media": true,
+  "create_task_for_groups": false,
+  "group_mention_only": true,
+  "media_save_path": "Inbox/",
+  "require_approval": true,
+  "templates": {
+    "acknowledgment": "Thank you for your message. I'll get back to you shortly.",
+    "out_of_office": "I'm currently unavailable. I'll respond as soon as possible.",
+    "received": "Your message has been received and is being processed."
+  }
+}
